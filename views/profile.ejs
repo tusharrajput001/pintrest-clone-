@@ -23,12 +23,16 @@
       </div>
 
       <div class="text-data">
-        <span class="name">username</span>
-        <span class="tag">@username</span>
-        <span class="tagline">Some tagline</span>
-        <span class="desc">some description</span>
+        <span class="name"><%= user.fullname %></span>
+        <span class="tag">@<%= user.username %></span>
+        <span class="tagline">Lorem ipsum dolor sit amet.</span>
+        <span class="desc">Lorem, ipsum dolor.</span>
       </div>
-      <a href="#" class="Acc-button">Account Setting</a>
+      <a href="/logout" class="Acc-button">Logout</a>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit">
+      </form>
     </div>
     <div class="card" style="width: 18rem;">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png" class="card-img-top" alt="...">
