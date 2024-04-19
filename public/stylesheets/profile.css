@@ -28,7 +28,8 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   bottom: 200px;
   position: relative;
-  left: 150px;  
+  z-index: 1;
+
 }
 .profile-card::before {
   content: "";
@@ -81,10 +82,23 @@ body {
   border-radius: 20px;
 
 }
+.container-pr {
+  position: absolute;
+  width: 90%;
+  height: 100vh; /* 100% of viewport height */
+  display: flex;
+  justify-content: center; /* Centers the child elements horizontally */
+  align-items: flex-start; /* Aligns the child elements to the top */
+  margin-top: 60%;
+}
 
-      .card{
-          position: relative;
-          top: 200px;
-          right: 40%;
-          
-      }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Aligns the child elements to the top */
+}
+
+.card {
+  margin: 10px; /* Adjust the margin as needed */
+}
